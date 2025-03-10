@@ -41,6 +41,5 @@ public class Atividade {
         this.descricao = descricao;
         this.preco = preco;
     }
-
 }
 

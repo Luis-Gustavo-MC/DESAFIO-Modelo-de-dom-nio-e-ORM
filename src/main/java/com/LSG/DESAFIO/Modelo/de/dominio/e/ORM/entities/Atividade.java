@@ -31,6 +31,9 @@ public class Atividade {
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
 
+    @ManyToMany(mappedBy = "atividades")
+    private HashSet<Participante> participantes = new HashSet<>();
+
     public Atividade(){}
     public Atividade(Integer id, String nome, String descricao, Double preco) {
         this.id = id;

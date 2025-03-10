@@ -1,6 +1,5 @@
 package com.LSG.DESAFIO.Modelo.de.dominio.e.ORM;
 
-import com.LSG.DESAFIO.Modelo.de.dominio.e.ORM.entities.Atividade;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

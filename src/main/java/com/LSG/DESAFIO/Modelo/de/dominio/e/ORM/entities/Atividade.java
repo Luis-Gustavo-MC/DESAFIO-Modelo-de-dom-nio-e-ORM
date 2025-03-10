@@ -27,6 +27,10 @@ public class Atividade {
     @OneToMany(mappedBy = "atividade")
     private Set<Bloco> blocos = new HashSet<>();
 
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "categoria_id")
+    private Categoria categoria;
+
     public Atividade(){}
     public Atividade(Integer id, String nome, String descricao, Double preco) {
         this.id = id;
